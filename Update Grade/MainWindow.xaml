@@ -1,0 +1,36 @@
+﻿<Window x:Class="Update_Grade.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Update_Grade"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Student Name:" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Width="116" FontSize="15"/>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="704,20,0,0" VerticalAlignment="Top" Width="65" FontSize="15"/>
+        <ListView d:ItemsSource="{d:SampleData ItemCount=5}" Margin="306,55,20,48">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Main Menu" HorizontalAlignment="Left" Margin="689,401,0,0" VerticalAlignment="Top" Width="91" FontSize="15"/>
+        <Button Content="Add Grades Windows" HorizontalAlignment="Left" Margin="22,401,0,0" VerticalAlignment="Top" Width="178" FontSize="15"/>
+        <Label Content="School Year:" HorizontalAlignment="Left" Margin="15,71,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Subject Name:" HorizontalAlignment="Left" Margin="15,122,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.265,0.245" FontSize="15"/>
+        <Label Content="Term:" HorizontalAlignment="Left" Margin="15,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.576,1.528" FontSize="15"/>
+        <Label Content="Subject Grade:" HorizontalAlignment="Left" Margin="15,206,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Teacher Name:" HorizontalAlignment="Left" Margin="13,244,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.336,0.353" FontSize="15"/>
+        <Button Content="Update Grade" HorizontalAlignment="Left" Margin="10,289,0,0" VerticalAlignment="Top" Width="290" FontSize="15"/>
+        <ComboBox HorizontalAlignment="Left" Margin="137,249,0,0" VerticalAlignment="Top" Width="150"/>
+        <ComboBox HorizontalAlignment="Left" Margin="137,127,0,0" VerticalAlignment="Top" Width="150" RenderTransformOrigin="2.322,10.864"/>
+        <ComboBox HorizontalAlignment="Left" Margin="137,172,0,0" VerticalAlignment="Top" Width="150"/>
+        <TextBox HorizontalAlignment="Left" Margin="137,210,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Margin="137,79,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="150" FontSize="15"/>
+        <ComboBox HorizontalAlignment="Left" Margin="463,20,0,0" VerticalAlignment="Top" Width="225"/>
+        <CheckBox Content="Update Grades" HorizontalAlignment="Left" Margin="13,322,0,0" VerticalAlignment="Top" FontSize="14"/>
+
+    </Grid>
+</Window>
